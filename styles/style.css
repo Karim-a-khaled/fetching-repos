@@ -27,17 +27,29 @@ input{
   padding: 5px;
 }
 
-/* .btn{
-  width: 40%;
-  padding: 7px 3px;
-  font-size: larger;
+.search-the-repos{
   color: white;
-  background-color: burlywood;
-} */
+  cursor: pointer;
+}
 
+.search-icon{
+  margin: 10px;
+}
+
+a:hover{
+  color: gray;
+}
 
 .div-btn{
   width: 100%;
   margin-top: 20px;
   text-align: center;
+}
+
+.repos{
+  width: 100%;
+}
+
+.repo{
+  width: fit-content;
 }
