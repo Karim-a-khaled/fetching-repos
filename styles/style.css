@@ -48,8 +48,17 @@ a:hover{
 
 .repos{
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .repo{
-  width: fit-content;
+  width: 30%;
+  border: 1px solid;
+  margin: 3px;
+  padding: 3px;
+}
+
+.title{
+  text-align: center;
 }
