@@ -9,7 +9,9 @@ FetchBtn.onclick = function(){
   if(repoOneInput.value =='' || repoTwoInput.value == ''){
     alert('please fill the fields with valid info')
   }
-
+  else if(repoOneInput.value == repoTwoInput.value){
+    alert('You entered the same username TWICE!')
+  }
   else{
   // Start Repo One
   const API_REPO_ONE = `https://api.github.com/users/${repoOneInput.value}`
@@ -33,32 +35,29 @@ fetch(API_REPO_Two)
 .then((response) => {return response.json()})
 .then((dataTwo)=>{
   var avatarTwo = dataTwo.avatar_url
-  console.log(dataTwo);
   for(let i = 0; i < dataTwo.length; i++){
     secondRepoCounter++
-    
   }
-
-
-// Finished Repo Two
-if(firstRepoCounter > secondRepoCounter){
-  theContainer.innerHTML = `
-  <h1>The Winner is:</h1>
-  <h3>${repoOneInput.value}</h3>
-  <img src="${avatarOne}" alt="">
-  `
-  console.log(y)
-  
-}else{
-  theContainer.innerHTML = `
-  <h1>The Winner is:</h1>
-  <h3>${repoTwoInput.value}</h3>
-  <img src="${avatarTwo}" alt="">
-  
-  `
-  console.log(x)
-  }
-})
+    // Finished Repo Two
+  //   if(dataOne.length === dataTwo.length){
+  //     alert('Draw')
+  // }
+    if(firstRepoCounter > secondRepoCounter ){
+      theContainer.innerHTML = 
+      `
+        <h1>The Winner is:</h1>
+        <h3>${repoOneInput.value}</h3>
+        img src="${avatarOne}" alt="">
+      `
+      }
+      else{
+      theContainer.innerHTML = `
+      <h1>The Winner is:</h1>
+      <h3>${repoTwoInput.value}</h3>
+      <img src="${avatarTwo}" alt="">
+      `
+      }
+    })
   })
 }
 }
