@@ -69,20 +69,18 @@
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    width: 100%;
   }
   .repo{
     border: 1px solid #a1a6ac;
     border-radius: 0.5rem;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
+    width: 80%;
+    height: 100px;
     display: grid;
-      grid-template-columns: 0.5fr 0.5fr;
-      grid-template-rows: 1fr;
-      padding: 0.5rem;
-      justify-content: space-evenly;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    padding: 0.5rem;
+    justify-content: space-evenly;
   }
   .repos a{
     justify-self: start;
