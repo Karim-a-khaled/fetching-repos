@@ -27,6 +27,9 @@ FetchBtn.onclick = function(){
         <h1>The Winner is:</h1>
         <h3>${repoOneInput.value}</h3>
         <img src="${avatarOne}" alt="">
+        <h1>The Loser is:</h1>
+        <h3>${repoTwoInput.value}</h3>
+        <img src="${avatarTwo}" alt="">
       `
       }
     else{

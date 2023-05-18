@@ -17,11 +17,18 @@
     <a class="navbar-brand" href="#">
       <i class="fab fa-github fa-2x mx-3 ps-1"></i>
     </a>
-    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-      data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
+    <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <form class="me-3">
         <div class="form-white input-group" style="width: 250px;">
@@ -83,20 +90,26 @@
 </nav>
 <!-- Navbar -->
 
-  <div class="container">
-    <div class="repo-one">
-      <label>First Username</label><br>
-      <input class="first-repo-inp" type="text">
-    </div>
 
-    <div class="repo-two">
-      <label>Second Username</label><br>
-      <input class="second-repo-inp" type="text">
-    </div>
+<div class="container container-comparison">
+  <div class="contender-one">
+    <label>First Username</label><br>
+    <input class="first-repo-inp" type="text">
+  </div>
+  <div class="contender-two">
+    <label>Second Username</label><br>
+    <input class="second-repo-inp" type="text">
+  </div>
+  <div class="div-btn">
+    <div class="btn btn-success" style="width:30%; font-size: 1.3em;">Fetch Repos</div>
+  </div>
+</div>
 
-    <div class="div-btn">
-      <div class="btn btn-success" style="width:100%; font-size: 1.3em;">Fetch Repos</div>
-    </div>
+
+  
+  
+    
+
   </div>
 
 <script src="https://kit.fontawesome.com/ddd74bfe96.js" crossorigin="anonymous"></script>
